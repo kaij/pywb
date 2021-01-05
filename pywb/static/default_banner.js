@@ -159,7 +159,7 @@ This file is part of pywb, https://github.com/webrecorder/pywb
 
       var logoContents = "";
       logoContents += "<img src='" + window.banner_info.logoImg + "' alt='" + window.banner_info.logoAlt + "'>";
-      logoContents += "<img src='" + window.banner_info.logoImg + "' class='mobile' alt='" + window.banner_info.logoAlt + "'>";
+      logoContents += "<img src='" + window.banner_info.logoImg + "' class='_wb_mobile' alt='" + window.banner_info.logoAlt + "'>";
 
       logo.innerHTML = logoContents;
       this.banner.appendChild(logo);
@@ -178,7 +178,7 @@ This file is part of pywb, https://github.com/webrecorder/pywb
     var calendarLink = document.createElement("a");
     calendarLink.setAttribute("id", "calendarLink");
     calendarLink.setAttribute("href", "#");
-    calendarLink.innerHTML = "<img src='" + calendarImg + "' alt='" + window.banner_info.calendarAlt + "'><span class='no-mobile'>&nbsp;" +window.banner_info.calendarLabel + "</span>";
+    calendarLink.innerHTML = "<img src='" + calendarImg + "' alt='" + window.banner_info.calendarAlt + "'><span class='_wb_no-mobile'>&nbsp;" +window.banner_info.calendarLabel + "</span>";
     ancillaryLinks.appendChild(calendarLink);
     this.calendarLink = calendarLink;
 
@@ -187,7 +187,7 @@ This file is part of pywb, https://github.com/webrecorder/pywb
       var languages = document.createElement("div");
 
       var label = document.createElement("span");
-      label.setAttribute("class", "no-mobile");
+      label.setAttribute("class", "_wb_no-mobile");
       label.appendChild(document.createTextNode(window.banner_info.choiceLabel + " "));
       languages.appendChild(label);
 
